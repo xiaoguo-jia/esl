@@ -1,2 +1,2 @@
 # esl
-# practice gnn with sample data
+practice gnn with sample data
