@@ -13,7 +13,7 @@ class NN(nn.Module):                                        # inhereted from nn.
         self.fc1 = nn.Linear(input_size, 50)                # fc stands for fully connected, 50 is the number of neurons in the layer
         self.fc2 = nn.Linear(50, num_classes)
 
-    def forward(self, x):                                   # computes output Tensors from input Tensors, perfroming the layers that were initialized in the __init__                       
+    def forward(self, x):                                    # computes output Tensors from input Tensors, perfming the layers that were initialized in the __init__                       
         x = F.relu(self.fc1(x))                              # calling self.fc1 on input x and applying relu
         x = self.fc2(x)                                      # calling self.fc2 on the new x
         return x
